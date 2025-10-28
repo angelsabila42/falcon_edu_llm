@@ -1,0 +1,1 @@
+web: python -c "from app import load_model; load_model()" && gunicorn --timeout 600 --workers 1 app:app
